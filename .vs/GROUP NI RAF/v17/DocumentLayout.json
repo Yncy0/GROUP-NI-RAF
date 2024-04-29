@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LanSchool Files\\IT306_BUAN\\GROUP NI RAF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12B23293-7785-497E-B2CF-DDFAE9AB29A4}|GROUP NI RAF\\GROUP NI RAF.vbproj|c:\\lanschool files\\it306_buan\\group ni raf\\group ni raf\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{12B23293-7785-497E-B2CF-DDFAE9AB29A4}|GROUP NI RAF\\GROUP NI RAF.vbproj|solutionrelative:group ni raf\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\LanSchool Files\\IT306_BUAN\\GROUP NI RAF\\GROUP NI RAF\\Form1.vb",
+              "RelativeDocumentMoniker": "GROUP NI RAF\\Form1.vb",
+              "ToolTip": "C:\\LanSchool Files\\IT306_BUAN\\GROUP NI RAF\\GROUP NI RAF\\Form1.vb [Design]",
+              "RelativeToolTip": "GROUP NI RAF\\Form1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T01:09:46.655Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
