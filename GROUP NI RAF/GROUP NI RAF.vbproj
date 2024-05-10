@@ -80,6 +80,42 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +133,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -115,6 +172,45 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E - Learning In Java Programming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subheading5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
