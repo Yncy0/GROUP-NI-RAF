@@ -53,7 +53,7 @@
         Dim showDialogOptions As DialogResult
 
         If pass = True Then
-            showDialogOptions = MessageBox.Show("CONGRATS! You can access Level 2!\n Do you want to continue?", "Message", MessageBoxButtons.YesNo)
+            showDialogOptions = MessageBox.Show("CONGRATS! You can access Level 2!" + vbCrLf + "Do you want to continue?", "Message", MessageBoxButtons.YesNo)
             If showDialogOptions = DialogResult.Yes Then
                 Form7.Show()
                 Me.Hide()
@@ -68,7 +68,7 @@
 
             End If
         Else
-            showDialogOptions = MessageBox.Show("YOU FAILED! You will be back to Level 1 again!\n Do you want to conitnue?", "Message", MessageBoxButtons.OK)
+            showDialogOptions = MessageBox.Show("YOU FAILED! You will be back to Level 1 again!" + vbCrLf + "Do you want to conitnue?", "Message", MessageBoxButtons.OK)
             If showDialogOptions = DialogResult.OK Then
                 Form2.Show()
                 Me.Hide()

@@ -1,8 +1,9 @@
 ﻿Public Class Form13
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim showDialogOptions As DialogResult = MessageBox.Show("The test will contain 15 Items \n you have only 30 mins \n Do you want to proceed?", "WARNING!", MessageBoxButtons.YesNo)
+        Dim showDialogOptions As DialogResult = MessageBox.Show("The test will contain 15 Items" + vbCrLf + "you have only 30 mins" + vbCrLf + "Do you want to proceed?", "WARNING!", MessageBoxButtons.YesNo)
         If showDialogOptions = DialogResult.Yes Then
             Form14.Show()
+            Me.Hide()
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If
@@ -13,4 +14,6 @@
         Form12.Show()
         Me.Hide()
     End Sub
+
+
 End Class
