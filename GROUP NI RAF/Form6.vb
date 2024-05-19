@@ -1,7 +1,9 @@
-﻿Public Class Form6
+﻿Imports System.Timers
+
+Public Class Form6
     Dim score As Integer = 0
     Dim pass As Boolean = False
-
+    Dim timer As Timer = New Timer()
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
