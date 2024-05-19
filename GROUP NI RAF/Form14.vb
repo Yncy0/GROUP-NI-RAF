@@ -4,49 +4,49 @@ Public Class Form14
     Dim score As Integer = 0
     Dim pass As Boolean = False
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox1.Text Then
+        If TextBox1.Text = "for" Then
             score += 1
         End If
-        If TextBox2.Text Then
+        If TextBox2.Text = "while" Then
             score += 1
         End If
-        If TextBox3.Text Then
+        If TextBox3.Text = "do-while" Then
             score += 1
         End If
-        If TextBox4.Text Then
+        If TextBox4.Text = "infinite" Then
             score += 1
         End If
-        If TextBox5.Text Then
+        If TextBox5.Text = "for-each" Then
             score += 1
         End If
-        If TextBox6.Text Then
+        If TextBox6.Text = "break" Then
             score += 1
         End If
-        If TextBox7.Text Then
+        If TextBox7.Text = "continue" Then
             score += 1
         End If
-        If TextBox8.Text Then
+        If TextBox8.Text = "nested" Then
             score += 1
         End If
-        If TextBox9.Text Then
+        If TextBox9.Text = "loop" Then
             score += 1
         End If
-        If TextBox10.Text Then
+        If TextBox10.Text = "method" Then
             score += 1
         End If
-        If TextBox11.Text Then
+        If TextBox11.Text = "once" Then
             score += 1
         End If
-        If TextBox12.Text Then
+        If TextBox12.Text = "condition" Then
             score += 1
         End If
-        If TextBox13.Text Then
+        If TextBox13.Text = "increment" Or TextBox13.Text = "decrement" Then
             score += 1
         End If
-        If TextBox14.Text Then
+        If TextBox14.Text = "for" Then
             score += 1
         End If
-        If TextBox15.Text Then
+        If TextBox15.Text = "while" Then
             score += 1
         End If
 
@@ -88,5 +88,18 @@ Public Class Form14
         score = 0
         TextBox1.Text = ""
         TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+        TextBox11.Text = ""
+        TextBox12.Text = ""
+        TextBox13.Text = ""
+        TextBox14.Text = ""
+        TextBox15.Text = ""
     End Sub
 End Class
