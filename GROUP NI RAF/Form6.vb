@@ -78,6 +78,7 @@
         score = 0
         TextBox1.Text = ""
         TextBox2.Text = ""
+
         RadioButton1.Checked = False
         RadioButton2.Checked = False
         RadioButton3.Checked = False
