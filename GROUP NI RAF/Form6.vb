@@ -1,23 +1,47 @@
 ﻿Public Class Form6
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
 
-    End Sub
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form7.Show()
-        Me.Hide()
+        Dim score As Integer = 0
+
+
+        If RadioButton2.Checked Then
+            score += 1
+        End If
+        If RadioButton3.Checked Then
+            score += 1
+        End If
+        If RadioButton5.Checked Then
+            score += 1
+        End If
+        If RadioButton8.Checked Then
+            score += 1
+        End If
+        If RadioButton11.Checked Then
+            score += 1
+        End If
+        If RadioButton9.Checked Then
+            score += 1
+        End If
+        If RadioButton13.Checked Then
+            score += 1
+        End If
+        If RadioButton15.Checked Then
+            score += 1
+        End If
+        If RadioButton17.Checked Then
+            score += 1
+        End If
+        If RadioButton19.Checked Then
+            score += 1
+        End If
+
+
+
+        TextBox2.Text = score.ToString
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
 End Class
