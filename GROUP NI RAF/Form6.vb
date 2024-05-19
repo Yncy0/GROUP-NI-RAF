@@ -37,9 +37,13 @@
             score += 1
         End If
 
-
-
         TextBox2.Text = score.ToString
+
+        If score >= 5 Then
+            TextBox1.Text = "YOU PASSED!"
+        Else
+            TextBox1.Text = "FAILED!"
+        End If
 
     End Sub
 
