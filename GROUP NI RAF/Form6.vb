@@ -1,9 +1,9 @@
 ﻿Public Class Form6
-
+    Dim score As Integer = 0
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim score As Integer = 0
+
         'Glory to Kyle Centeno
 
         If RadioButton2.Checked Then
@@ -43,5 +43,8 @@
 
     End Sub
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Form7.Show()
+        Me.Hide()
+    End Sub
 End Class
