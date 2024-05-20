@@ -27,6 +27,7 @@ Public Class Form5
             Form6.RadioButton19.Enabled = True
             Form6.RadioButton20.Enabled = True
             Form6.Timer1.Enabled = True
+            Form6.Label3.Text = "00:00:00"
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If

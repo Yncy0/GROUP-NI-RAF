@@ -1,6 +1,27 @@
 ﻿Public Class Form10
     Dim score As Integer = 0
     Dim pass As Boolean = False
+    Dim ss, tt, vv As Integer
+    Dim showDialogOptions As DialogResult
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label3.Text = Format(ss, "00:") & Format(tt, "00:") & Format(vv, "00")
+        vv += 1
+        If vv > 59 Then
+            vv = 0
+            tt += 1
+        End If
+        If tt = 25 Then
+            vv = 0
+            tt = 0
+            Label3.Text = "00:00:00"
+            Timer1.Enabled = False
+            showDialogOptions = MessageBox.Show("TIMES UP! You failed this tes!" + vbCrLf + "You will restart to Level 1", "Message", MessageBoxButtons.OK)
+            If showDialogOptions.Yes Then
+                Form2.Show()
+                Me.Hide()
+            End If
+        End If
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If RadioButton2.Checked Then
@@ -81,11 +102,11 @@
         RadioButton38.Enabled = False
         RadioButton39.Enabled = False
         RadioButton40.Enabled = False
+
+        Timer1.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim showDialogOptions As DialogResult
-
         If pass = True Then
             showDialogOptions = MessageBox.Show("CONGRATS! You can access Level 3!" + vbCrLf + "Do you want to continue?", "Message", MessageBoxButtons.YesNo)
             If showDialogOptions = DialogResult.Yes Then
@@ -155,4 +176,6 @@
         RadioButton39.Checked = False
         RadioButton40.Checked = False
     End Sub
+
+
 End Class

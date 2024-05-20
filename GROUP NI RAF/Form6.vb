@@ -13,7 +13,7 @@ Public Class Form6
             vv = 0
             tt += 1
         End If
-        If tt = 25 Then
+        If tt = 20 Then
             vv = 0
             tt = 0
             Label3.Text = "00:00:00"
@@ -90,6 +90,8 @@ Public Class Form6
         RadioButton18.Enabled = False
         RadioButton19.Enabled = False
         RadioButton20.Enabled = False
+
+        Timer1.Enabled = False
 
     End Sub
 

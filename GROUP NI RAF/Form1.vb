@@ -23,6 +23,7 @@ Public Class Form1
         Dim pWord As String = TextBox2.Text
         Dim hasUCase As Boolean = False
         Dim validPass As Boolean = False
+
         If countForUCase(pWord) >= 1 Then
             hasUCase = True
         Else
@@ -48,6 +49,7 @@ Public Class Form1
                 pubUser = uName
                 Form16.form1UName = pubUser
                 Form16.Show()
+                Form14.uName = pubUser
                 Me.Hide()
             End If
         End If

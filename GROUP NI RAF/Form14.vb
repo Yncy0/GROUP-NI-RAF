@@ -3,6 +3,29 @@
 Public Class Form14
     Dim score As Integer = 0
     Dim pass As Boolean = False
+    Public uName As String
+    Dim ss, tt, vv As Integer
+    Dim showDialogOptions As DialogResult
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label3.Text = Format(ss, "00:") & Format(tt, "00:") & Format(vv, "00")
+        vv += 1
+        If vv > 59 Then
+            vv = 0
+            tt += 1
+        End If
+        If tt = 20 Then
+            vv = 0
+            tt = 0
+            Label3.Text = "00:00:00"
+            Timer1.Enabled = False
+            showDialogOptions = MessageBox.Show("TIMES UP! You failed this tes!" + vbCrLf + "You will restart to Level 1", "Message", MessageBoxButtons.OK)
+            If showDialogOptions.Yes Then
+                Form2.Show()
+                Me.Hide()
+            End If
+        End If
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "for" Then
             score += 1
@@ -76,12 +99,13 @@ Public Class Form14
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim showDialogOptions As DialogResult
+
 
         If pass = True Then
             showDialogOptions = MessageBox.Show("CONGRATS! You can access finished all levels!" + vbCrLf + "Do you want to continue?", "Message", MessageBoxButtons.YesNo)
             If showDialogOptions = DialogResult.Yes Then
-                Form11.Show()
+                Form15.Label1.Text = uName
+                Form15.Show()
                 Me.Hide()
             Else
                 Dim newDialog As DialogResult = MessageBox.Show("Do you want to go back to Level 1?", "Message", MessageBoxButtons.YesNo)
@@ -118,4 +142,6 @@ Public Class Form14
         TextBox14.Text = ""
         TextBox15.Text = ""
     End Sub
+
+
 End Class
