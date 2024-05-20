@@ -3,7 +3,23 @@
 Public Class Form6
     Dim score As Integer = 0
     Dim pass As Boolean = False
-    Dim timer As Timer = New Timer()
+    Dim ss, tt, vv As Integer
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        Label3.Text = Format(ss, "00:") & Format(tt, "00:") & Format(vv, "00")
+        vv += 1
+        If vv > 59 Then
+            vv = 0
+            tt += 1
+        End If
+        If tt = 25 Then
+            vv = 0
+            tt = 0
+            Label3.Text = "00:00:00"
+            Timer1.Enabled = False
+        End If
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
