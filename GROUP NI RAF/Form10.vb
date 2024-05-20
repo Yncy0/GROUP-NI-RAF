@@ -41,6 +41,46 @@
         Else
             TextBox1.Text = "FAILED!"
         End If
+        RadioButton1.Enabled = False
+        RadioButton2.Enabled = False
+        RadioButton3.Enabled = False
+        RadioButton4.Enabled = False
+        RadioButton5.Enabled = False
+        RadioButton6.Enabled = False
+        RadioButton7.Enabled = False
+        RadioButton8.Enabled = False
+        RadioButton9.Enabled = False
+        RadioButton10.Enabled = False
+        RadioButton11.Enabled = False
+        RadioButton12.Enabled = False
+        RadioButton13.Enabled = False
+        RadioButton14.Enabled = False
+        RadioButton15.Enabled = False
+        RadioButton16.Enabled = False
+        RadioButton17.Enabled = False
+        RadioButton18.Enabled = False
+        RadioButton19.Enabled = False
+        RadioButton20.Enabled = False
+        RadioButton21.Enabled = False
+        RadioButton22.Enabled = False
+        RadioButton23.Enabled = False
+        RadioButton24.Enabled = False
+        RadioButton25.Enabled = False
+        RadioButton26.Enabled = False
+        RadioButton27.Enabled = False
+        RadioButton28.Enabled = False
+        RadioButton29.Enabled = False
+        RadioButton30.Enabled = False
+        RadioButton31.Enabled = False
+        RadioButton32.Enabled = False
+        RadioButton33.Enabled = False
+        RadioButton34.Enabled = False
+        RadioButton35.Enabled = False
+        RadioButton36.Enabled = False
+        RadioButton37.Enabled = False
+        RadioButton38.Enabled = False
+        RadioButton39.Enabled = False
+        RadioButton40.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
