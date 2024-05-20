@@ -107,6 +107,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         If pass = True Then
             showDialogOptions = MessageBox.Show("CONGRATS! You can access Level 3!" + vbCrLf + "Do you want to continue?", "Message", MessageBoxButtons.YesNo)
             If showDialogOptions = DialogResult.Yes Then

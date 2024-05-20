@@ -50,6 +50,7 @@ Public Class Form9
             Form10.Label3.Text = "00:00:00"
 
             Form10.Show()
+            Me.Hide()
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If

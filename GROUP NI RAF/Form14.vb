@@ -14,7 +14,7 @@ Public Class Form14
             vv = 0
             tt += 1
         End If
-        If tt = 20 Then
+        If tt = 30 Then
             vv = 0
             tt = 0
             Label3.Text = "00:00:00"

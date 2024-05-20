@@ -270,6 +270,7 @@ Partial Class Form14
         '
         'Timer1
         '
+        Me.Timer1.Interval = 1000
         '
         'Form14
         '

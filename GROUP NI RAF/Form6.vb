@@ -27,7 +27,6 @@ Public Class Form6
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
         'Glory to Kyle Centeno
 
         If RadioButton2.Checked Then
