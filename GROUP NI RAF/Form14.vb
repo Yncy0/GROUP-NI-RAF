@@ -57,6 +57,22 @@ Public Class Form14
         Else
             TextBox17.Text = "FAILED!"
         End If
+
+        TextBox1.Enabled = False
+        TextBox2.Enabled = False
+        TextBox3.Enabled = False
+        TextBox4.Enabled = False
+        TextBox5.Enabled = False
+        TextBox6.Enabled = False
+        TextBox7.Enabled = False
+        TextBox8.Enabled = False
+        TextBox9.Enabled = False
+        TextBox10.Enabled = False
+        TextBox11.Enabled = False
+        TextBox12.Enabled = False
+        TextBox13.Enabled = False
+        TextBox14.Enabled = False
+        TextBox15.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
