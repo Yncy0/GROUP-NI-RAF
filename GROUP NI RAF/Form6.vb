@@ -49,6 +49,27 @@ Public Class Form6
             TextBox1.Text = "FAILED!"
         End If
 
+        RadioButton1.Enabled = False
+        RadioButton2.Enabled = False
+        RadioButton3.Enabled = False
+        RadioButton4.Enabled = False
+        RadioButton5.Enabled = False
+        RadioButton6.Enabled = False
+        RadioButton7.Enabled = False
+        RadioButton8.Enabled = False
+        RadioButton9.Enabled = False
+        RadioButton10.Enabled = False
+        RadioButton11.Enabled = False
+        RadioButton12.Enabled = False
+        RadioButton13.Enabled = False
+        RadioButton14.Enabled = False
+        RadioButton15.Enabled = False
+        RadioButton16.Enabled = False
+        RadioButton17.Enabled = False
+        RadioButton18.Enabled = False
+        RadioButton19.Enabled = False
+        RadioButton20.Enabled = False
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -102,5 +123,10 @@ Public Class Form6
         RadioButton19.Checked = False
         RadioButton20.Checked = False
 
+
+
+
     End Sub
+
+
 End Class
