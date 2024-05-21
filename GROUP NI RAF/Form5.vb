@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
+﻿Imports System.Reflection.Emit
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 
 Public Class Form5
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -27,7 +28,9 @@ Public Class Form5
             Form6.RadioButton19.Enabled = True
             Form6.RadioButton20.Enabled = True
             Form6.Timer1.Enabled = True
-            Form6.Label3.Text = "00:00:00"
+
+            'Form6.Timer1.Enabled = False
+
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If

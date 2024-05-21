@@ -23,12 +23,12 @@ Partial Class Form16
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,6 +45,23 @@ Partial Class Form16
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1343, 751)
         Me.Panel1.TabIndex = 0
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(898, 387)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(346, 29)
+        Me.TextBox2.TabIndex = 13
+        Me.TextBox2.UseSystemPasswordChar = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(898, 307)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(346, 29)
+        Me.TextBox1.TabIndex = 12
         '
         'Button2
         '
@@ -87,21 +104,6 @@ Partial Class Form16
         Me.PictureBox1.Size = New System.Drawing.Size(1340, 751)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(908, 311)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(317, 20)
-        Me.TextBox1.TabIndex = 12
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(908, 391)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(317, 20)
-        Me.TextBox2.TabIndex = 13
-        Me.TextBox2.UseSystemPasswordChar = True
         '
         'Form16
         '

@@ -3,7 +3,7 @@
 Public Class Form6
     Dim score As Integer = 0
     Dim pass As Boolean = False
-    Dim ss, tt, vv As Integer
+    Public ss, tt, vv As Integer
     Dim showDialogOptions As DialogResult
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -20,13 +20,21 @@ Public Class Form6
             Timer1.Enabled = False
             showDialogOptions = MessageBox.Show("TIMES UP! You failed this tes!" + vbCrLf + "You will restart to Level 1", "Message", MessageBoxButtons.OK)
             If showDialogOptions.Yes Then
+                ss = 0
+                tt = 0
+                vv = 0
+                Label3.Text = "00:00:00"
+                Timer1.Enabled = False
                 Form2.Show()
                 Me.Hide()
             End If
+
+
         End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         'Glory to Kyle Centeno
 
         If RadioButton2.Checked Then
@@ -100,11 +108,21 @@ Public Class Form6
         If pass = True Then
             showDialogOptions = MessageBox.Show("CONGRATS! You can access Level 2!" + vbCrLf + "Do you want to continue?", "Message", MessageBoxButtons.YesNo)
             If showDialogOptions = DialogResult.Yes Then
+                ss = 0
+                tt = 0
+                vv = 0
+                Label3.Text = "00:00:00"
+                Timer1.Enabled = False
                 Form7.Show()
                 Me.Hide()
             Else
                 Dim newDialog As DialogResult = MessageBox.Show("Do you want to go back to Level 1?", "Message", MessageBoxButtons.YesNo)
                 If newDialog.Yes Then
+                    ss = 0
+                    tt = 0
+                    vv = 0
+                    Label3.Text = "00:00:00"
+                    Timer1.Enabled = False
                     Form2.Show()
                     Me.Hide()
                 Else
@@ -115,6 +133,11 @@ Public Class Form6
         Else
             showDialogOptions = MessageBox.Show("YOU FAILED! You will be back to Level 1 again!" + vbCrLf + "Do you want to conitnue?", "Message", MessageBoxButtons.OK)
             If showDialogOptions = DialogResult.OK Then
+                ss = 0
+                tt = 0
+                vv = 0
+                Label3.Text = "00:00:00"
+                Timer1.Enabled = False
                 Form2.Show()
                 Me.Hide()
             End If
