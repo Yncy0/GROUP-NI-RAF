@@ -34,8 +34,9 @@ Public Class Form6
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
         'Glory to Kyle Centeno
+
+        Button1.Enabled = False
 
         If RadioButton2.Checked Then
             score += 1
@@ -99,6 +100,7 @@ Public Class Form6
         RadioButton20.Enabled = False
 
         Timer1.Enabled = False
+        Button2.Enabled = True
 
     End Sub
 

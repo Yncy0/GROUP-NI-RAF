@@ -23,6 +23,9 @@ Public Class Form13
             Form14.TextBox13.Enabled = True
             Form14.TextBox14.Enabled = True
             Form14.TextBox15.Enabled = True
+
+            Form14.Button2.Enabled = False
+            Form14.Button1.Enabled = True
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If

@@ -49,6 +49,9 @@ Public Class Form9
             Form10.Timer1.Enabled = True
             Form10.Label3.Text = "00:00:00"
 
+            Form10.Button2.Enabled = False
+            Form10.Button1.Enabled = True
+
             Form10.Show()
             Me.Hide()
         ElseIf showDialogOptions = DialogResult.No Then
