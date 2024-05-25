@@ -119,7 +119,7 @@ Public Class Form14
                 vv = 0
                 Label3.Text = "00:00:00"
                 Timer1.Enabled = False
-                Form15.Label1.Text = uName
+                Form15.TextBox1.Text = uName
                 Form15.Show()
                 Me.Hide()
             Else

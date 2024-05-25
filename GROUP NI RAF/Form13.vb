@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports System.Reflection.Emit
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form13
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -26,6 +27,11 @@ Public Class Form13
 
             Form14.Button2.Enabled = False
             Form14.Button1.Enabled = True
+            Form15.Label2.Text = Today.ToString("MM-dd-yyyy")
+            Form15.Label2.BackColor = Color.Transparent
+
+
+            Form15.TextBox1.BackColor = Color.Transparent
         ElseIf showDialogOptions = DialogResult.No Then
             Return
         End If
